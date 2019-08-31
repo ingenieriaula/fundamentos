@@ -1,0 +1,104 @@
+*{ /* aqui van las propiedades   propiedades : valor propiedad; */
+    border:0; /* borde  */
+    margin: 0; /* margen externo afecta hacia los lados externos */
+    padding: 0; /* igual al marge per de manera interna el valor afecta a los cuatro lados */
+    box-sizing: border-box; /* trabaja con el padding */
+}
+/* la etiqueta a solo va el nombre de la etiqueta todas las etiquetas van a tener  */
+a {
+    text-decoration: none;
+    transition:all linear 0.3s; /* cuando el mouse pase sobre el boton o letras hace una animacion estas se miden en segundos 0.3s o 300ms milisegundos */
+    color: white; /* indica color de vinculos */
+}
+/* define el estado sobre cuando el cursor esta sobre ele elemento html, posicionar el mouse */
+a:hover {
+    color:orange;
+
+}
+
+body {
+    background: black; /* definimos color de fondo */
+    color: white;/*  definimos un color de fuente o letra. El color se puede definir con el nombre en ingles pero no da tonalidad para definir tonalidad se utiliza colo hexsadecimal*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    /* border necesita 3 propiedades, el grosor, el tipo de borde y el color */
+    border-bottom: 1px solid #aa37f2; /* borde inferior, tipo de borde solido, puede ser dashed o dotted*/
+    padding:10px 50px; /* margen interior: un valor afecta los cuatro lados. Cuando hay 2 valores afecta arriba-abajo y el segundo valor a los lados   */
+}
+header h1, header nav{ /* el h1 es hijo de header y nav hijo del segundo header, si dejo solo el h1 y nav, cambiara todos los h1 y nav de la hoja*/
+    /*display es la propiedad de la distribución de los elementos,
+    todos o casi todos los elementos html tienen una distribución o
+    display de bloque(display;block) Para que 2elementos puedan
+    convivir en un mismo blqque necesitamos modificar su naturleza,
+    display; inline-block, permite que 2 etiquetas html esten en el mismo bloque*/
+    display:inline-block; /*los bloques se alinen*/
+    /*permite alinear uno o mas elementos en el eje y (vertical) top (arriba), middle (al centro) y bootom (abajo)*/
+    vertical-align: middle;
+    width: 30%;
+}
+header nav { /*sobre ecribe la misma propiedad que se indico anteriormente, siempre va a predominar  el ultimo estilo indicado*/
+    text-align: right; /*botones se alinean a la derecha*/
+    width: 65%;
+}
+header nav ul{
+    /*eliminamos vinietas del ul, ul que esta dentro de nav y header*/
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 8px 15px;
+
+}
+header nav ul li a{
+    display: block;
+    width: 100%;
+    padding: 8px 15px;
+}
+section {
+    width: 100%;
+    padding: 50px 100px;
+    /*--- tipos de alineaciones left, right, center, justify ---*/
+    text-align: center;
+}
+section.main{ /* de la clase main, en css asi se llama asi, como llamar a una clase, nombre etiqueta y nombre de la clase*/
+    background-image: url(../img/background.jpg);
+    background-size: cover; /*la imagen se adapte al tamanio de la pantalla, la propiedad cover se adapta, pero en cierto punto de agranda, depende del tamanio que se de al principio*/
+    background-attachment: fixed;
+    padding: 100px 150px;
+}
+section.main h1, section.main p {
+    font-size: 40px;
+    text-shadow: 3px 3px 5px #5a720b;
+    margin-bottom: 25px;
+}
+
+section.main p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+section.main a {
+    border: 3px solid orange;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(90, 114, 11, 0.76);
+    font-size: 22px;
+    border-radius: 10px 20px;
+}
+
+
+section.servicios h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+section.servicios article {
+    display: inline-block;
+    width: 30%;
+
+}
