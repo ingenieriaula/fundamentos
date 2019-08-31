@@ -102,6 +102,23 @@ section.servicios article {
     width: 30%;
     margin-bottom: 15px;
 }
+
+section.servicios article i{
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 15px;
+
+
+section.servicios article button{
+    padding: 10px 20px;
+    background: #085987;
+    margin-top: 18px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
 section.servicios article button{
     padding: 10px 20px;
     background: #085987;
