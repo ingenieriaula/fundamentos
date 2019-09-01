@@ -103,12 +103,11 @@ section.servicios article {
     margin-bottom: 15px;
 }
 
-section.servicios article i{
+section.servicios article i {
     font-size: 40px;
     color: orange;
     margin-bottom: 15px;
-
-
+}
 section.servicios article button{
     padding: 10px 20px;
     background: #085987;
@@ -127,4 +126,43 @@ section.servicios article button{
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
+}
+section.portafolio{
+    background: #222222;
+}
+section.portafolio h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.itemPortafolio{
+    width: 90%;
+    background: #777777;
+    margin: 20px auto;
+    /*para centrar un contenedor, se utiliza margin auto especialmente e los lados izquierdo y derecho*/
+    display: flex;/* covierte en elemento flexibles a los hijos de un contenedor. no afecta al padre sino a los eleentos hijos*/
+    /*flex-wrap: wrap=> permite que solo se utilize hasta el 00% del ancho de un contenedor y los elemetnos que sobrepasen ese ancho,
+    pasan automaticamente hacia abajo
+    justify-content: ;
+    justify-content => justu¿¿ifica el contenido.
+    flex-start: ajusta el contenido alcomienzao (defeccto)
+    flex-end: ajusta el contenido al final
+    center: ajusta el contenido al centro
+    space-around: separa el contenido dejando un espacio al centro
+    space-between: ajusta el conetendi al extremos*/
+    justify-content: space-between;
+
+}
+.imgPortafolio, .itemTexto{
+    /*display: inline-block;*/
+    width: 40%;
+    border: 1px solid green;
+    vertical-align: middle;
+}
+.itemTexto{
+    width: 50%;
+}
+.itemPortafolio img{
+    width: 100%;
+    display: block;
 }
