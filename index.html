@@ -74,7 +74,9 @@
                 Ab aspernatur consectetur ipsum iure maxime modi molestias nulla quidem reiciendis rem repellendus,
                 sapiente similique soluta vero voluptates.
             </p>
-            <buttom type="button">ver Proyecto</buttom>
+            <div class="btnItem">
+                <button type="button">ver Proyecto</button>
+            </div>
         </div>
     </div>
     <div class="itemPortafolio">
@@ -88,7 +90,9 @@
                 Ab aspernatur consectetur ipsum iure maxime modi molestias nulla quidem reiciendis rem repellendus,
                 sapiente similique soluta vero voluptates.
             </p>
-            <buttom type="button">ver Proyecto</buttom>
+            <div class="btnItem">
+                <button type="button">ver Proyecto</button>
+            </div>
         </div>
     </div>
     <div class="itemPortafolio">
@@ -102,14 +106,39 @@
                 Ab aspernatur consectetur ipsum iure maxime modi molestias nulla quidem reiciendis rem repellendus,
                 sapiente similique soluta vero voluptates.
             </p>
-            <buttom type="button">ver Proyecto</buttom>
+            <div class="btnItem">
+                <button type="button">ver Proyecto</button>
+            </div>
         </div>
     </div>
 </section>
-<section class="contacto"></section>
-
-<footer></footer>
-
+<section class="contacto">
+<div class="contenedorFormulario">
+    <h1>Contáctanos</h1>
+    <form>
+        <input type="text" name="nombre" placeholder="ingrese su nombre" required>
+        <input type="email" name="correo" placeholder="Ingrese su correo" required>
+        <input type="tel" name="fono" placeholder="Ingrese su telefono">
+        <textarea  name="mensaje" placeholder="Ingresar descricpión" rows="5" required></textarea>
+        <button type="submit"> Enviar mensaje</button>
+    </form>
+</div>
+<div class="contenedorMapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.408034696759!2d-72.95877339744462!3d-41.
+             45206333595533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183b175446cc67%3A0x8fa1389a9dc45ef3
+             !2sEsperanza%2C%20Puerto%20Montt%2C%20Regi%C3%B3n%20de%20los%20Lagos!5e0!3m2!1ses-419!2scl!4v1567864926767!5m2!1ses-419!2scl" allowfullscreen="">
+    </iframe>
+</div>
+</section>
+<footer>
+<!--    span: similar al div, es una etiqueta generica, que no tiene significado propio-->
+<!--    y se suele utilizar para textos-->
+    <span class="piePagina">
+        Desarrollado por <a href="https://www.facebook.com/portafoliokevinantipaz/" target="_blank">Kevin Antipa</a>
+    </span>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

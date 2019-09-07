@@ -127,6 +127,7 @@ section.servicios article button{
     border-radius: 5px;
     cursor: pointer;
 }
+/*-------------------CSS DE PORTAFOLIO---------------------------*/
 section.portafolio{
     background: #222222;
 }
@@ -156,13 +157,105 @@ section.portafolio h1{
 .imgPortafolio, .itemTexto{
     /*display: inline-block;*/
     width: 40%;
-    border: 1px solid green;
+   /* border: 1px solid green; para ver los bordes que ocupa el div class="imgPortafolio" y el
+   div class="itemTexto"*/
     vertical-align: middle;
+   /*border: 2px solid darkred ;*/
 }
-.itemTexto{
+.itemTexto {
     width: 50%;
+    padding: 20px;
+    text-align: right;
 }
+.itemTexto p {
+    margin-bottom: 20px;
+}
+.btnItem{
+    text-align: right;
+}
+.itemTexto button{
+    /*float: right;
+    clear: both;
+    hacer flotar a la derecha el button pero no es recomendable ya
+    que se ocupa para cosas mas puntuales */
+    background: #4a1618;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.itemTexto button:hover{
+    box-shadow: 0px 10px 10px rgba(0,0,0,.5);
+    /*el css se le aplica sombra al button al pasar el cursor ensima de el*/
+
+}
+/*r = rojo 0-->255*/
+/*g = green 0-->255*/
+/*b = blue 0-->255*/
+/*a = alfa 0--> 1*/
 .itemPortafolio img{
     width: 100%;
     display: block;
+}
+/*--------------------CSS DE CONTACTOS -----------------------*/
+/*----------------------Formulario--------*/
+.contenedorFormulario{
+    width: 90%;
+    margin: 10px auto;
+}
+.contenedorFormulario h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.contenedorFormulario form{
+    width: 100%;
+    border: 1px solid darkred;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenedorFormulario form input,
+.contenedorFormulario form textarea,
+.contenedorFormulario form button{
+    width: 30%;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+.contenedorFormulario form textarea,
+.contenedorFormulario form button{
+    width: 100%;
+}
+.contenedorFormulario form button{
+    background: #4a1618;
+    color: black;
+    border: none;
+}
+.contenedorFormulario form input:focus,
+.contenedorFormulario form textarea:focus{
+    transform: scale(1.1);
+}
+/*--------------------Mapa-----------------------*/
+.contenedorMapa{
+    width: 100%;
+    margin: auto;
+}
+.contenedorMapa iframe{
+    width: 90%;
+    height: 350px;
+}
+/*------------------------CSS PIE DE PAGINA------------------------------------*/
+footer{
+    background: #cccccc;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+.piePagina{
+    font-family: 'Arial Black';
+    font-style: italic;
+}
+.piePagina a{
+    color:black;
+    font-family: "Arial Black";
+    font-style: italic;
 }
