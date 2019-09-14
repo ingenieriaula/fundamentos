@@ -6,6 +6,8 @@
     <title>Fundamentos Web</title>
     <!-- meta name se utilza para posicion de descripcion de pagina en los buscadores -->
     <meta name= "description" content="taller para la creacion de aplicaciones web">
+<!--    etiqueta clave para que ls dispositivos reconozca las reglas media query css-->
+    <meta name="viewport" content="width-device,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7ff0a0897d.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
@@ -18,24 +20,25 @@
     <nav>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
             </li>
             <li>
-                <a href="#">Servicios</a>
+                <a href="#servicio">Servicios</a>
             </li><li>
-            <a href="#">Portafolio</a>
+            <a href="#portafolio">Portafolio</a>
         </li><li>
-            <a href="#">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </li>
         </ul>
     </nav>
 </header>
-<section class="main">
+<section class="main" id="home">
     <h1>DESARROLLAMOS SOLUCIONES INFORMATICAS</h1>
     <p>Lorea El Ipsum Calzar ascurrio pero pa q po washas fierro quieee readi zoronca teni mano? picao, buqué machucao quieee terrible de perkin tenis mano? ñoco ascurrio querí ser leyenda. La cani zorra despavila el moco de vio shekea fineza de vio me voy en cana pura falacia oe teni mano? bellako soplamoco brocacochi te tiraste matagatos vendisuone, buqué zarpao readi de vio zarpao ñoco quieee zarpao detonao cuca embarao tillas shilamediavola fineza.</p>
     <a href="">CONTACTANOS AHORA</a>
 </section> <!-- seccion principal -->
-<section class="servicios">
+<section class="servicios" id="servicio">
+    <h1>Nuestro servicio</h1>
     <article>
         <h1>Desarrollo de sistemas</h1>
         <i class="fa fa-desktop"   ></i>
@@ -61,7 +64,7 @@
         <button type="button">Ver</button>
     </article>
 </section>
-<section class="portafolio">
+<section class="portafolio" id="portafolio">
     <h1>Nuestros Proyectos</h1>
     <div class="itemPortafolio">
         <div class="imgPortafolio">
@@ -112,7 +115,7 @@
         </div>
     </div>
 </section>
-<section class="contacto">
+<section class="contacto" id="contacto">
 <div class="contenedorFormulario">
     <h1>Contáctanos</h1>
     <form>

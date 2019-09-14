@@ -12,3 +12,4 @@ $(document).ready(documentoCargando);
 function documentoCargando() {
     console.log("el documento se cargo");
 }
+

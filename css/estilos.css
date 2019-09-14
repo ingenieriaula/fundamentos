@@ -28,6 +28,8 @@ header{
     /* border necesita 3 propiedades, el grosor, el tipo de borde y el color */
     border-bottom: 1px solid #aa37f2; /* borde inferior, tipo de borde solido, puede ser dashed o dotted*/
     padding:10px 50px; /* margen interior: un valor afecta los cuatro lados. Cuando hay 2 valores afecta arriba-abajo y el segundo valor a los lados   */
+    position: fixed;
+    background: rgba(0,0,0,.5);
 }
 header h1, header nav{ /* el h1 es hijo de header y nav hijo del segundo header, si dejo solo el h1 y nav, cambiara todos los h1 y nav de la hoja*/
     /*display es la propiedad de la distribución de los elementos,
@@ -68,7 +70,9 @@ section.main{ /* de la clase main, en css asi se llama asi, como llamar a una cl
     background-image: url(../img/background.jpg);
     background-size: cover; /*la imagen se adapte al tamanio de la pantalla, la propiedad cover se adapta, pero en cierto punto de agranda, depende del tamanio que se de al principio*/
     background-attachment: fixed;
-    padding: 100px 150px;
+    padding: 180px 150px 100px 150px;
+    text-align: center;
+    /*left, right, center, justify */
 }
 section.main h1, section.main p {
     font-size: 40px;
@@ -88,6 +92,9 @@ section.main a {
     background: rgba(90, 114, 11, 0.76);
     font-size: 22px;
     border-radius: 10px 20px;
+}
+.servicios, .portafolio, .contacto{
+    padding-top: 100px;
 }
 
 
@@ -258,4 +265,28 @@ footer{
     color:black;
     font-family: "Arial Black";
     font-style: italic;
+}
+/*reglas media query.Solo se aplican si el dispositivo cuenta
+* con el ancho indicado en la regla*/
+@media (max-width: 1024px) {
+    section.main {
+        padding: 100px 50px;
+    }
+    section.servicios{
+        padding: 50px;
+    }
+    div.itemPortafolio{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    section.servicios article{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contenedorFormulario form input{
+        width: 100%;
+    }
+
 }
