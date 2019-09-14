@@ -13,11 +13,26 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+<div class="overlay">
+</div>
+<div class="menuLateral" id="menuLateral">
+    <div class="cerrar">
+        <i class="fas fas-times" id="btnCerrar"></i>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Portafolio</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
 <header>
     <!-- signo gato # recarga en la misma pagina -->
     <h1><a href="#">Diseño web</a></h1>
     <!-- dentro de nav se cran listas ul= lista indefinida ol=lista ordenada -->
-    <nav>
+    <nav id="nav">
         <ul>
             <li>
                 <a href="#home">Home</a>
@@ -30,6 +45,9 @@
             <a href="#contacto">Contacto</a>
         </li>
         </ul>
+        <button class="btnHamburguesa" id="btnMenu">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 </header>
 <section class="main" id="home">

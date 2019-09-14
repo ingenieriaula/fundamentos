@@ -10,6 +10,23 @@ ELEMENTOS DEL DOM               ej:                             eje:
 */
 $(document).ready(documentoCargando);
 function documentoCargando() {
-    console.log("el documento se cargo");
+  /*seleccionamo el btn menu, que estara escuchando el evento click
+  * para ejecutar una funcion*/
+  $("#btnMenu").on("click", abrirMenu);
+  $(".overlay").on("click",cerrarMenu)
+}
+function abrirMenu() {
+  /*Seleeccionamos la capa y la hacemos aparecer en 300 ms de velocidad*/
+    $(".overlay").fadeIn( '300ms' );
+    $("#menuLateral").animate({
+        "left": 0
+    }, '300ms');
+
+}
+function cerrarMenu() {
+  $(".overlay").fadeOut( '300ms' );
+  $("#menuLateral").animate({
+      "left": "-300px"
+  },'300ms');
 }
 

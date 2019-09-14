@@ -30,6 +30,7 @@ header{
     padding:10px 50px; /* margen interior: un valor afecta los cuatro lados. Cuando hay 2 valores afecta arriba-abajo y el segundo valor a los lados   */
     position: fixed;
     background: rgba(0,0,0,.5);
+    z-index: 100;
 }
 header h1, header nav{ /* el h1 es hijo de header y nav hijo del segundo header, si dejo solo el h1 y nav, cambiara todos los h1 y nav de la hoja*/
     /*display es la propiedad de la distribución de los elementos,
@@ -266,6 +267,35 @@ footer{
     font-family: "Arial Black";
     font-style: italic;
 }
+/*estilo de menu hambuerguesa*/
+.btnHamburguesa{
+    padding: 10px;
+    background: #333333;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.btnHamburguesa i{
+    font-size: 25px;
+    color: #000000;
+}
+.overlay{
+    background: rgba(0,0,0,.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    display: none;
+}
+.menuLateral{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+    background: #cccccc;
+    padding: 50px;
+    left: -300px;
+}
 /*reglas media query.Solo se aplican si el dispositivo cuenta
 * con el ancho indicado en la regla*/
 @media (max-width: 1024px) {
@@ -279,7 +309,6 @@ footer{
         width: 100%;
     }
 }
-
 @media (max-width: 768px) {
     section.servicios article{
         width: 100%;
@@ -288,5 +317,15 @@ footer{
     .contenedorFormulario form input{
         width: 100%;
     }
-
+    header nav ul{
+        display: none;
+    }
+    /*estilo hambuerguesa*/
+    .btnHamburguesa{
+        display: block;
+        float: right;
+        clear: both;
+    }
 }
+
+
