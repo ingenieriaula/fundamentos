@@ -68,13 +68,13 @@ section {
     text-align: center;
 }
 section.main{ /* de la clase main, en css asi se llama asi, como llamar a una clase, nombre etiqueta y nombre de la clase*/
-    background-image: url(../img/background.jpg);
-    background-size: cover; /*la imagen se adapte al tamanio de la pantalla, la propiedad cover se adapta, pero en cierto punto de agranda, depende del tamanio que se de al principio*/
-    background-attachment: fixed;
-    padding: 180px 150px 100px 150px;
-    text-align: center;
-    /*left, right, center, justify */
-}
+     background-image: url(../img/background.jpg);
+     background-size: cover; /*la imagen se adapte al tamanio de la pantalla, la propiedad cover se adapta, pero en cierto punto de agranda, depende del tamanio que se de al principio*/
+     background-attachment: fixed;
+     padding: 180px 150px 100px 150px;
+     text-align: center;
+     /*left, right, center, justify */
+ }
 section.main h1, section.main p {
     font-size: 40px;
     text-shadow: 3px 3px 5px #5a720b;
@@ -295,6 +295,40 @@ footer{
     background: #cccccc;
     padding: 50px;
     left: -300px;
+}
+/*------------------------comienzo del modal--------------------------------------- */
+.modal{
+    width: 80%;
+    background: white;
+    color: #000000;
+    padding: 100px;
+    position: fixed;
+    top: 100px;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    display: none;
+}
+.modal button{
+    display: block;
+    padding: 8px;
+    background: #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*---------------COMIENZO DEL IR AL  CIELO -----------------*/
+.irAlCielo{
+    padding: 15px;
+    background: #777777;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
 }
 /*reglas media query.Solo se aplican si el dispositivo cuenta
 * con el ancho indicado en la regla*/
