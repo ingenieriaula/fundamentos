@@ -329,6 +329,10 @@ footer{
     right: 20px;
     bottom: 20px;
     display: none;
+    cursor:pointer;
+}
+.nav-dark{
+    background: #000000;
 }
 /*reglas media query.Solo se aplican si el dispositivo cuenta
 * con el ancho indicado en la regla*/
